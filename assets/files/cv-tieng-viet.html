@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Trần Thanh Quang</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            color: #233446;
+            font-family: Arial, "Segoe UI", sans-serif;
+            font-size: 8.2pt;
+            line-height: 1.38;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            background: #e9eef2;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 11mm 12mm 10mm;
+            background: #fff;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8mm;
+            padding-bottom: 5mm;
+            border-bottom: 2px solid #1686a1;
+        }
+
+        h1 {
+            margin: 0 0 1mm;
+            color: #173a59;
+            font-size: 22pt;
+            line-height: 1.1;
+            letter-spacing: 0.4px;
+        }
+
+        .headline {
+            margin: 0 0 2mm;
+            color: #1686a1;
+            font-size: 9pt;
+            font-weight: 700;
+        }
+
+        .contact-line {
+            margin: 0;
+            color: #435466;
+            font-size: 7.7pt;
+            line-height: 1.55;
+        }
+
+        .contact-line a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .portrait {
+            width: 25mm;
+            height: 29mm;
+            flex: 0 0 25mm;
+            object-fit: cover;
+            object-position: center 30%;
+            border: 1px solid #d5e0e8;
+            border-radius: 2mm;
+        }
+
+        .columns {
+            display: grid;
+            grid-template-columns: 1.72fr 1fr;
+            gap: 6mm;
+            padding-top: 4mm;
+        }
+
+        section {
+            margin: 0 0 3.2mm;
+            break-inside: avoid;
+        }
+
+        h2 {
+            margin: 0 0 1.7mm;
+            padding: 0 0 1mm 2mm;
+            border-bottom: 1px solid #c8d6df;
+            border-left: 2px solid #1686a1;
+            color: #173a59;
+            font-size: 9.2pt;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            margin: 0;
+            color: #173a59;
+            font-size: 8.4pt;
+            line-height: 1.28;
+        }
+
+        h4 {
+            margin: 0.4mm 0 0;
+            color: #435466;
+            font-size: 7.8pt;
+        }
+
+        p {
+            margin: 0.7mm 0 0;
+        }
+
+        ul {
+            margin: 1mm 0 0;
+            padding-left: 4mm;
+        }
+
+        li {
+            margin: 0 0 0.65mm;
+            padding-left: 0.3mm;
+        }
+
+        li::marker {
+            color: #1686a1;
+        }
+
+        .role {
+            display: flex;
+            justify-content: space-between;
+            gap: 2mm;
+        }
+
+        .date {
+            flex: 0 0 auto;
+            color: #607487;
+            font-size: 7.2pt;
+            white-space: nowrap;
+        }
+
+        .company {
+            margin-top: 0.3mm;
+            color: #1686a1;
+            font-weight: 700;
+        }
+
+        .project {
+            margin-top: 1.7mm;
+        }
+
+        .project p,
+        .muted {
+            color: #435466;
+        }
+
+        .tech {
+            margin-top: 0.5mm;
+            color: #1686a1;
+            font-size: 7.2pt;
+            font-weight: 700;
+        }
+
+        .skill-group {
+            margin-top: 1.5mm;
+        }
+
+        .skill-group h3 {
+            font-size: 7.7pt;
+        }
+
+        .skill-group p {
+            color: #435466;
+        }
+
+        .side-card {
+            margin-top: 1.3mm;
+        }
+
+        .side-card:first-of-type {
+            margin-top: 0;
+        }
+
+        .side-card .date {
+            display: block;
+            margin-top: 0.2mm;
+        }
+
+        .address {
+            color: #435466;
+        }
+
+        @media screen {
+            .page {
+                box-shadow: 0 2mm 8mm rgba(23, 58, 89, 0.15);
+            }
+        }
+
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .page {
+                min-height: 297mm;
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <header>
+            <div>
+                <h1>TRẦN THANH QUANG</h1>
+                <p class="headline">KỸ SƯ PHẦN MỀM | PHÁT TRIỂN FULL-STACK &amp; ĐẢM BẢO CHẤT LƯỢNG</p>
+                <p class="contact-line">TP. Hồ Chí Minh, Việt Nam | 0964 407 450 | <a href="mailto:tranthanhquang.hvt@gmail.com">tranthanhquang.hvt@gmail.com</a></p>
+                <p class="contact-line"><a href="https://github.com/QuazG119">github.com/QuazG119</a> | <a href="https://www.facebook.com/tq10824">facebook.com/tq10824</a></p>
+            </div>
+            <img class="portrait" src="../images/image.png" alt="Ảnh chân dung Trần Thanh Quang">
+        </header>
+
+        <div class="columns">
+            <div>
+                <section>
+                    <h2>Tóm tắt chuyên môn</h2>
+                    <p>Kỹ sư Phần mềm với gần một năm làm việc tại FPT Telecom, tham gia xây dựng và triển khai các nền tảng doanh nghiệp phục vụ hơn 4.000 kỹ thuật viên hiện trường và 400+ quản lý vận hành trên toàn quốc. Có kinh nghiệm phát triển full-stack với Vue.js/Nuxt.js và ASP.NET Core; vận dụng tư duy phát triển phần mềm vào thiết kế kiểm thử, xác minh API và phân tích nguyên nhân gốc rễ của lỗi. Phối hợp cùng các nhóm để triển khai sản phẩm ổn định trên toàn quốc.</p>
+                </section>
+
+                <section>
+                    <h2>Kinh nghiệm làm việc</h2>
+                    <div class="role">
+                        <h3>Kỹ sư Phần mềm Full-Stack</h3>
+                        <span class="date">03/2026 – Hiện tại</span>
+                    </div>
+                    <p class="company">FPT Telecom</p>
+                    <ul>
+                        <li>Phát triển giải pháp bản đồ và quản lý nhân lực, hỗ trợ hơn 4.000 kỹ thuật viên, 400+ quản lý và 10.000+ phiếu triển khai trên toàn quốc.</li>
+                        <li>Xây dựng mô-đun bản đồ tương tác bằng Vue.js/Leaflet, hiển thị hàng nghìn sự cố và hàng chục nghìn tài sản hạ tầng.</li>
+                        <li>Phát triển dịch vụ backend và tích hợp hệ thống doanh nghiệp với ASP.NET Core, MediatR, Redis, Apache Kafka và Oracle.</li>
+                        <li>Hiện đại hóa ứng dụng Blazor WebAssembly bằng cách chuyển đổi sang Vue.js/Nuxt.js, cải thiện khả năng mở rộng, bảo trì và trải nghiệm người dùng.</li>
+                        <li>Phối hợp với nhóm frontend và backend để phát hành sản phẩm trên toàn quốc, chú trọng hiệu năng và độ tin cậy.</li>
+                        <li>Sử dụng Codex và Gemini để phân tích quy trình cũ, nghiên cứu công nghệ bản đồ, tìm điểm nghẽn hiệu năng, hỗ trợ chuyển đổi và thiết kế tích hợp backend.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Kỹ năng phối hợp</h2>
+                    <p>Phối hợp liên nhóm frontend và backend; chú trọng độ tin cậy, hiệu năng và khả năng bảo trì. Chủ động học về kiến trúc phần mềm và tự động hóa kiểm thử.</p>
+                </section>
+
+                <section>
+                    <h2>Dự án tiêu biểu</h2>
+                    <div class="project">
+                        <h3>Ứng dụng đặt vé xe khách</h3>
+                        <p>Đặt vé, xem lịch trình, quản lý đặt chỗ và cập nhật tình trạng vé.</p>
+                        <p class="tech">C# · Node.js · JavaScript</p>
+                    </div>
+                    <div class="project">
+                        <h3>Shop-shoe</h3>
+                        <p>Xây dựng backend API cho website bán giày.</p>
+                        <p class="tech">.NET Core Web API · Entity Framework · Bootstrap</p>
+                    </div>
+                    <div class="project">
+                        <h3>Hệ thống quản lý rạp chiếu phim</h3>
+                        <p>Quản lý lịch chiếu, vé, chọn ghế và trang quản trị.</p>
+                        <p class="tech">ASP.NET Core MVC · SQL Server · Bootstrap</p>
+                    </div>
+                </section>
+            </div>
+
+            <aside>
+                <section>
+                    <h2>Học vấn</h2>
+                    <div class="side-card">
+                        <h3>Kỹ thuật Phần mềm</h3>
+                        <p>Trường Đại học Nguyễn Tất Thành</p>
+                        <span class="date">2022–2026 | Chương trình cử nhân</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Chứng chỉ &amp; thành tích</h2>
+                    <div class="side-card">
+                        <h3>MOS Specialist</h3>
+                        <p class="muted">Microsoft Word, Excel, PowerPoint (2025)</p>
+                    </div>
+                    <div class="side-card">
+                        <h3>Tiếng Anh</h3>
+                        <p class="muted">Đọc tài liệu kỹ thuật, giao tiếp cơ bản</p>
+                    </div>
+                    <div class="side-card">
+                        <h3>Học bổng Khuyến khích Học tập</h3>
+                        <p class="muted">Được ghi nhận qua các học kỳ (2023–2025)</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Kỹ năng chuyên môn</h2>
+                    <div class="skill-group">
+                        <h3>Frontend</h3>
+                        <p>Vue.js, Nuxt.js, Vuetify, TypeScript, Leaflet</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Backend &amp; API</h3>
+                        <p>C#, ASP.NET Core, REST API, MediatR, Background Services</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Dữ liệu &amp; messaging</h3>
+                        <p>Oracle, SQL Server, EF Core, Dapper, Redis, Elasticsearch, Apache Kafka</p>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Kiểm thử</h3>
+                        <p>Thiết kế test case, báo cáo và xác minh lỗi, Postman, Chrome DevTools, phân tích nguyên nhân</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Liên hệ</h2>
+                    <p class="address">Phường Tân Hưng, TP. Hồ Chí Minh</p>
+                    <p>0964 407 450</p>
+                    <p>tranthanhquang.hvt@gmail.com</p>
+                    <p>github.com/QuazG119</p>
+                </section>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>
